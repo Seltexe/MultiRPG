@@ -11,8 +11,9 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Add dependencies
-find_package(SDL3 CONFIG REQUIRED)
-find_package(GLEW CONFIG REQUIRED)
+find_package(SFML COMPONENTS system window graphics audio CONFIG REQUIRED)
+find_package(ImGui-SFML CONFIG REQUIRED)
+find_package(imgui CONFIG REQUIRED)
 
 # No C++20 modules
 set(CMAKE_CXX_SCAN_FOR_MODULES OFF) 
@@ -42,8 +43,13 @@ target_compile_definitions(MMORPG PRIVATE
 
 # Automatically links to these libs
 target_link_libraries(MMORPG PRIVATE
-    SDL3::SDL3
-    GLEW::GLEW
+    sfml-system 
+    sfml-network 
+    sfml-graphics 
+    sfml-window 
+    sfml-audio
+    ImGui-SFML::ImGui-SFML
+    imgui::imgui
 )
 
 # Add directories with any random loose .dlls or .libs here
