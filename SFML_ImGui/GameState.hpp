@@ -5,6 +5,8 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <future>
+#include "EntityManager.hpp"
+#include "Player.hpp"
 
 #include "../thirdparty/imgui/imgui.h"
 
@@ -20,6 +22,8 @@ public:
     void onEnter() override {
         std::cout << "Entering GameState" << std::endl;
         loadingFuture = AssetLoader::loadAssetsAsync("../assets/assets.json", "game");
+
+		EntityManager::CreateEntity<Player>();
     }
 
     void onExit() override 

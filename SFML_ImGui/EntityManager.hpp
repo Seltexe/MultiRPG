@@ -7,7 +7,7 @@
 class EntityManager {
 public:
     template<typename T, typename... Args>
-    T& CreateEntity(Args&&... args) {
+    static T& CreateEntity(Args&&... args) {
         static_assert(std::is_base_of<Entity, T>::value,
             "T must inherit from Entity");
         auto entity = std::make_unique<T>(std::forward<Args>(args)...);
@@ -16,12 +16,18 @@ public:
         return ref;
     }
 
-    void UpdateAll(sf::Time dt) {
+    static void UpdateAll(sf::Time dt) {
         for (auto& entity : m_entities) {
             entity->Update(dt);
         }
     }
 
+	static void DrawAll() {
+		for (auto& entity : m_entities) {
+			entity->Draw();
+		}
+	}
+
 private:
-    std::vector<std::unique_ptr<Entity>> m_entities;
+    inline static std::vector<std::unique_ptr<Entity>> m_entities;
 };

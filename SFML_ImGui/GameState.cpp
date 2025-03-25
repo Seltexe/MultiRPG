@@ -13,6 +13,8 @@ void GameState::update(sf::Time dt)
 	// Where the magic happens
     if (loadingDone)
     {
+        EntityManager::UpdateAll(dt);
+
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
             std::cout << "Retour au menu..." << std::endl;
             if (stateManager) {
@@ -41,9 +43,6 @@ void GameState::render()
 	// Where the magic happens
     if (loadingDone) 
     {
-        auto& textureManager = ResourceManager<sf::Texture>::GetInstance();
-        sf::Sprite playerSprite;
-        playerSprite.setTexture(textureManager.Get("background1"));
-        Window::draw(playerSprite);
+		EntityManager::DrawAll();
     }
 }
