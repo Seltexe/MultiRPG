@@ -31,6 +31,9 @@
     <Filter Include="Fichiers d%27en-tête\States">
       <UniqueIdentifier>{9ed2784d-3cb4-41d5-8a8a-6c98a4444e65}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\Entity">
+      <UniqueIdentifier>{576b6584-99da-4d73-8fe5-33580f3a234f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -112,6 +115,12 @@
     </ClInclude>
     <ClInclude Include="MenuState.hpp">
       <Filter>Fichiers d%27en-tête\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.hpp">
+      <Filter>Fichiers d%27en-tête\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityManager.hpp">
+      <Filter>Fichiers d%27en-tête\Entity</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
