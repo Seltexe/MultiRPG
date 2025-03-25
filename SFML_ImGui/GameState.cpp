@@ -43,7 +43,7 @@ void GameState::render()
     {
         auto& textureManager = ResourceManager<sf::Texture>::GetInstance();
         sf::Sprite playerSprite;
-        playerSprite.setTexture(textureManager.Get("background6"));
+        playerSprite.setTexture(textureManager.Get("background1"));
         Window::draw(playerSprite);
     }
 }
