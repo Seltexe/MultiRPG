@@ -1,9 +1,16 @@
-/out
-bin/
-/.vs
-.idea/
-CMakeSettings.json
-Makefile
+.vs/
+.x64/
+*.tlog
+*.log
+*.pdb
+*.idb
+*.ilk
+*.recipe
+*.iopdb
+*.iobj
+*.ipdb
+*.*.recipe
+
 # Prerequisites
 *.d
 
@@ -12,6 +19,7 @@ Makefile
 *.lo
 *.o
 *.obj
+*.iobj
 
 # Precompiled Headers
 *.gch
@@ -20,7 +28,6 @@ Makefile
 # Compiled Dynamic libraries
 *.so
 *.dylib
-*.dll
 
 # Fortran module files
 *.mod
@@ -30,53 +37,8 @@ Makefile
 *.lai
 *.la
 *.a
-*.lib
 
 # Executables
 *.exe
 *.out
 *.app
-
-# Solution files
-*.vcxproj
-*.sln
-.vs
-
-# Visual C++ cache files
-ipch/
-*.aps
-*.ncb
-*.opensdf
-*.sdf
-*.cachefile
-
-# Visual Studio profiler
-*.psess
-*.vsp
-*.vspx
-
-# Random crap
-*_i.c
-*_p.c
-*_i.h
-*.ilk
-*.pch
-*.pdb
-*.pgc
-*.pgd
-*.rsp
-*.sbr
-*.tlb
-*.tli
-*.tlh
-*.tmp
-*.tmp_proj
-*.log
-*.vspscc
-*.vssscc
-.builds
-*.pidb
-*.svclog
-*.scc
-
-build/
