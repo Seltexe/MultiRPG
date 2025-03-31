@@ -17,7 +17,4 @@ private:
 
 	float m_maxSpeed;
 	float m_friction;
-	float m_gravity;
-	bool m_isGrounded;
-	float m_jumpStrength;
 };
