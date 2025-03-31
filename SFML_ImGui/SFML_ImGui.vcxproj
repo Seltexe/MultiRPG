@@ -162,6 +162,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="ButtonManager.cpp" />
+    <ClCompile Include="Consumable.cpp" />
     <ClCompile Include="Core.cpp" />
     <ClCompile Include="GameState.cpp" />
     <ClCompile Include="main.cpp" />
@@ -177,6 +178,7 @@
   <ItemGroup>
     <ClInclude Include="AssetLoader.hpp" />
     <ClInclude Include="ButtonManager.hpp" />
+    <ClInclude Include="Consumable.hpp" />
     <ClInclude Include="Core.hpp" />
     <ClInclude Include="Entity.hpp" />
     <ClInclude Include="EntityManager.hpp" />

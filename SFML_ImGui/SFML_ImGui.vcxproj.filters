@@ -34,6 +34,9 @@
     <Filter Include="Fichiers d%27en-tête\Entity">
       <UniqueIdentifier>{576b6584-99da-4d73-8fe5-33580f3a234f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\Entity">
+      <UniqueIdentifier>{bf520d92-8f89-49b1-9a6f-ddb136bd2435}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -79,7 +82,10 @@
       <Filter>Fichiers sources\States</Filter>
     </ClCompile>
     <ClCompile Include="Player.cpp">
-      <Filter>Fichiers sources</Filter>
+      <Filter>Fichiers sources\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Consumable.cpp">
+      <Filter>Fichiers sources\Entity</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -126,6 +132,9 @@
       <Filter>Fichiers d%27en-tête\Entity</Filter>
     </ClInclude>
     <ClInclude Include="Player.hpp">
+      <Filter>Fichiers d%27en-tête\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Consumable.hpp">
       <Filter>Fichiers d%27en-tête\Entity</Filter>
     </ClInclude>
   </ItemGroup>
